@@ -177,6 +177,8 @@ const FormInput = ({ children, label, error }) => {
     </div>
   );
 };
+
+// This is repetitive.. I usually prefer to do Typescript. So I only did it one time just for the "must-have"
 PlanetModal.propTypes = {
   selectedPlanet: PropTypes.object,
   isModalOpen: PropTypes.bool,
