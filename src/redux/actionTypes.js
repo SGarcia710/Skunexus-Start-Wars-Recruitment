@@ -1,0 +1,3 @@
+export const SET_SELECTED_PLANET = 'SET_SELECTED_PLANET';
+export const CLOSE_MODAL = 'CLOSE_MODAL';
+export const OPEN_MODAL = 'OPEN_MODAL';

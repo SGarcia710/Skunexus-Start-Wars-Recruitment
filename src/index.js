@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
+import App from './router';
 import reportWebVitals from './reportWebVitals';
+import './assets/styles/tailwind.css';
+import { Provider } from 'react-redux';
+import store from './redux';
+import { ToastProvider } from 'react-toast-notifications';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ToastProvider
+      autoDismiss
+      autoDismissTimeout={6000}
+      placement="bottom-center"
+    >
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ToastProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
